@@ -167,7 +167,7 @@ export default function LoginDialog() {
 
   return (
     <Wrapper onSubmit={handleSubmit}>
-      <Title>Joining</Title>
+      <Title>Unirse</Title>
       <RoomName>
         <Avatar style={{ background: getColorByString(roomName) }}>
           {getAvatarString(roomName)}
@@ -179,7 +179,7 @@ export default function LoginDialog() {
       </RoomDescription>
       <Content>
         <Left>
-          <SubTitle>Select an avatar</SubTitle>
+          <SubTitle>Selecione un Avatar</SubTitle>
           <Swiper
             modules={[Navigation]}
             navigation
@@ -200,11 +200,11 @@ export default function LoginDialog() {
           <TextField
             autoFocus
             fullWidth
-            label="Name"
+            label="Nombre"
             variant="outlined"
             color="secondary"
             error={nameFieldEmpty}
-            helperText={nameFieldEmpty && 'Name is required'}
+            helperText={nameFieldEmpty && 'Nombre es obligatorio'}
             onInput={(e) => {
               setName((e.target as HTMLInputElement).value)
             }}
@@ -212,8 +212,8 @@ export default function LoginDialog() {
           {!videoConnected && (
             <Warning>
               <Alert variant="outlined" severity="warning">
-                <AlertTitle>Warning</AlertTitle>
-                No webcam/mic connected - <strong>connect one for best experience!</strong>
+                <AlertTitle>Advertencia</AlertTitle>
+                Micrófono/Cámara web desconectados - <strong>conecte alguno para una mejor experiencia!</strong>
               </Alert>
               <Button
                 variant="outlined"
@@ -222,14 +222,14 @@ export default function LoginDialog() {
                   game.network.webRTC?.getUserMedia()
                 }}
               >
-                Connect Webcam
+                Conectar Cámara y Micrófono
               </Button>
             </Warning>
           )}
 
           {videoConnected && (
             <Warning>
-              <Alert variant="outlined">Webcam connected!</Alert>
+              <Alert variant="outlined">¡Cámara Web Conectada!</Alert>
             </Warning>
           )}
         </Right>

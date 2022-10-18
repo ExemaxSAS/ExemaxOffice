@@ -122,7 +122,7 @@ export const CustomRoomTable = () => {
   }
 
   return availableRooms.length === 0 ? (
-    <MessageText>There are no custom rooms now, create one or join the public lobby.</MessageText>
+    <MessageText>No hay salas personalizadas ahora, cree una o conéctese al lobby.</MessageText>
   ) : (
     <>
       <CustomRoomTableContainer component={Paper}>
@@ -159,7 +159,7 @@ export const CustomRoomTable = () => {
                   <TableCell>{roomId}</TableCell>
                   <TableCell align="center">{clients}</TableCell>
                   <TableCell align="center">
-                    <Tooltip title={hasPassword ? 'Password required' : ''}>
+                    <Tooltip title={hasPassword ? 'Contraseña obligatoria' : ''}>
                       <Button
                         variant="outlined"
                         color="secondary"
@@ -195,7 +195,7 @@ export const CustomRoomTable = () => {
               error={passwordFieldEmpty}
               helperText={passwordFieldEmpty && 'Required'}
               value={password}
-              label="Password"
+              label="Contraseña"
               type="password"
               variant="outlined"
               color="secondary"

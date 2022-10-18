@@ -58,21 +58,21 @@ export const CreateRoomForm = () => {
   return (
     <CreateRoomFormWrapper onSubmit={handleSubmit}>
       <TextField
-        label="Name"
+        label="Nombre"
         variant="outlined"
         color="secondary"
         autoFocus
         error={nameFieldEmpty}
-        helperText={nameFieldEmpty && 'Name is required'}
+        helperText={nameFieldEmpty && 'Nombre es obligatorio'}
         onChange={handleChange('name')}
       />
 
       <TextField
-        label="Description"
+        label="Descripción"
         variant="outlined"
         color="secondary"
         error={descriptionFieldEmpty}
-        helperText={descriptionFieldEmpty && 'Description is required'}
+        helperText={descriptionFieldEmpty && 'Descripción es obligatoria'}
         multiline
         rows={4}
         onChange={handleChange('description')}
@@ -80,7 +80,7 @@ export const CreateRoomForm = () => {
 
       <TextField
         type={showPassword ? 'text' : 'password'}
-        label="Password (optional)"
+        label="Contraseña (opcional)"
         onChange={handleChange('password')}
         color="secondary"
         InputProps={{
@@ -103,3 +103,4 @@ export const CreateRoomForm = () => {
     </CreateRoomFormWrapper>
   )
 }
+	

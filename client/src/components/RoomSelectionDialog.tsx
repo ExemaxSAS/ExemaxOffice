@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../images/logo.png'
+import logo from '../images/logo.png?1'
 import styled from 'styled-components'
 import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
@@ -157,9 +157,9 @@ export default function RoomSelectionDialog() {
                   <ArrowBackIcon />
                 </IconButton>
                 <Title>
-                  Custom Rooms
+                  Salas Personalizadas
                   <Tooltip
-                    title="We update the results in realtime, no refresh needed!"
+                    title="Actualizamos resultados en tiempo real ¡no hace falta recargar!"
                     placement="top"
                   >
                     <IconButton>
@@ -190,7 +190,7 @@ export default function RoomSelectionDialog() {
                   color="secondary"
                   onClick={() => (lobbyJoined ? setShowCustomRoom(true) : setShowSnackbar(true))}
                 >
-                  Crear / Buscar una Sala Privada
+                  Crear / Buscar una Sala Personalizada
                 </Button>
               </Content>
             </>
@@ -198,7 +198,7 @@ export default function RoomSelectionDialog() {
         </Wrapper>
         {!lobbyJoined && (
           <ProgressBarWrapper>
-            <h3> Contando al servidor...</h3>
+            <h3> Conectando al servidor...</h3>
             <ProgressBar color="secondary" />
           </ProgressBarWrapper>
         )}
