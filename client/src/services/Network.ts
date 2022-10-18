@@ -34,7 +34,7 @@ export default class Network {
     const endpoint =
       process.env.NODE_ENV === 'production'
         ? `wss://server-sky.exemax.ar/`
-        : `${protocol}//${window.location.hostname}:2567`
+        : `wss://server-sky.exemax.ar/`
     this.client = new Client(endpoint)
     this.joinLobbyRoom().then(() => {
       store.dispatch(setLobbyJoined(true))
