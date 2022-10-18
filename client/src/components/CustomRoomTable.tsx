@@ -188,7 +188,7 @@ export const CustomRoomTable = () => {
       <PasswordDialog open={showPasswordDialog} onClose={resetPasswordDialog}>
         <form onSubmit={handlePasswordSubmit}>
           <DialogContent className="dialog-content">
-            <MessageText>This a private room, please enter password:</MessageText>
+            <MessageText>Esta Sala es privada, ingrese contraseña:</MessageText>
             <TextField
               autoFocus
               fullWidth
@@ -205,16 +205,16 @@ export const CustomRoomTable = () => {
             />
             {showPasswordError && (
               <Alert severity="error" variant="outlined">
-                Incorrect Password!
+                ¡Contraseña Incorrecta!
               </Alert>
             )}
           </DialogContent>
           <DialogActions>
             <Button color="secondary" onClick={resetPasswordDialog}>
-              Cancel
+              Cancelar
             </Button>
             <Button color="secondary" type="submit">
-              Join
+              Unirse
             </Button>
           </DialogActions>
         </form>

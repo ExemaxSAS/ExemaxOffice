@@ -98,7 +98,7 @@ export const CreateRoomForm = () => {
         }}
       />
       <Button variant="contained" color="secondary" type="submit">
-        Create
+        Crear
       </Button>
     </CreateRoomFormWrapper>
   )

@@ -135,7 +135,7 @@ export default function RoomSelectionDialog() {
           // overwrites the dark theme on render
           style={{ background: '#fdeded', color: '#7d4747' }}
         >
-          Trying to connect to server, please try again!
+          ¡Tratando de conectarse al servidor, intente nuevamente!
         </Alert>
       </Snackbar>
       <Backdrop>
@@ -174,23 +174,23 @@ export default function RoomSelectionDialog() {
                 color="secondary"
                 onClick={() => setShowCreateRoomForm(true)}
               >
-                Create new room
+                Crear nueva Sala
               </Button>
             </CustomRoomWrapper>
           ) : (
             <>
-              <Title>Welcome to SkyOffice</Title>
+              <Title>Bienvenido a Oficina Virtual Exemax</Title>
               <Content>
                 <img src={logo} alt="logo" />
                 <Button variant="contained" color="secondary" onClick={handleConnect}>
-                  Connect to public lobby
+                  Conectarse al Lobby público
                 </Button>
                 <Button
                   variant="outlined"
                   color="secondary"
                   onClick={() => (lobbyJoined ? setShowCustomRoom(true) : setShowSnackbar(true))}
                 >
-                  Create/find custom rooms
+                  Crear / Buscar una Sala Privada
                 </Button>
               </Content>
             </>
@@ -198,7 +198,7 @@ export default function RoomSelectionDialog() {
         </Wrapper>
         {!lobbyJoined && (
           <ProgressBarWrapper>
-            <h3> Connecting to server...</h3>
+            <h3> Contando al servidor...</h3>
             <ProgressBar color="secondary" />
           </ProgressBarWrapper>
         )}
