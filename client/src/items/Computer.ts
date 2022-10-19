@@ -27,9 +27,9 @@ export default class Computer extends Item {
 
   onOverlapDialog() {
     if (this.currentUsers.size === 0) {
-      this.setDialogBox('Press R to use computer')
+      this.setDialogBox('Presione R para usar la Computadora')
     } else {
-      this.setDialogBox('Press R join')
+      this.setDialogBox('Presione R para Unirse')
     }
   }
 

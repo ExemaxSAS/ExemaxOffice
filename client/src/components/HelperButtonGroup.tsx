@@ -131,35 +131,35 @@ export default function HelperButtonGroup() {
               <ArrowRightIcon /> ID: {roomId}
             </RoomDescription>
             <RoomDescription>
-              <ArrowRightIcon /> Description: {roomDescription}
+              <ArrowRightIcon /> Descripción: {roomDescription}
             </RoomDescription>
             <p className="tip">
               <LightbulbIcon />
-              Shareable link coming up 😄
+              Link para compartir próximamente 😄
             </p>
           </Wrapper>
         )}
         {showControlGuide && (
           <Wrapper>
-            <Title>Controls</Title>
+            <Title>Controles</Title>
             <IconButton className="close" onClick={() => setShowControlGuide(false)} size="small">
               <CloseIcon />
             </IconButton>
             <ul>
               <li>
-                <strong>W, A, S, D or arrow keys</strong> to move
+                <strong>W, A, S, D o las Flechas</strong> para moverse
               </li>
               <li>
-                <strong>E</strong> to sit down (when facing a chair)
+                <strong>E</strong> para sentarse (mirando hacia una silla)
               </li>
               <li>
-                <strong>R</strong> to use computer to screen share (when facing a computer)
+                <strong>R</strong> para usar una Computadora y Compartir Pantalla (mirando hacia una computadora)
               </li>
               <li>
-                <strong>Enter</strong> to open chat
+                <strong>Enter</strong> para abrir el Chat
               </li>
               <li>
-                <strong>ESC</strong> to close chat
+                <strong>ESC</strong> para cerrar el Chat
               </li>
             </ul>
             <p className="tip">
