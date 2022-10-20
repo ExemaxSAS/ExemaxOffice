@@ -112,7 +112,7 @@ export default class MyPlayer extends Player {
           })
           // set up new dialog as player sits down
           chairItem.clearDialogBox()
-          chairItem.setDialogBox('Press E to leave')
+          chairItem.setDialogBox('Presione E para salir')
           this.chairOnSit = chairItem
           this.playerBehavior = PlayerBehavior.SITTING
           return

@@ -27,9 +27,9 @@ export default class Whiteboard extends Item {
 
   onOverlapDialog() {
     if (this.currentUsers.size === 0) {
-      this.setDialogBox('Press R to use whiteboard')
+      this.setDialogBox('Presione R para usar la Pizarra')
     } else {
-      this.setDialogBox('Press R join')
+      this.setDialogBox('Presione R para Unirse')
     }
   }
 

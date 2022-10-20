@@ -262,7 +262,7 @@ export default function Chat() {
                 inputRef={inputRef}
                 autoFocus={focused}
                 fullWidth
-                placeholder="Press Enter to chat"
+                placeholder="Presione Enter para Chatear"
                 value={inputValue}
                 onKeyDown={handleKeyDown}
                 onChange={handleChange}
