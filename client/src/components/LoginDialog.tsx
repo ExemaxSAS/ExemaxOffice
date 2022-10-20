@@ -236,7 +236,7 @@ export default function LoginDialog() {
       </Content>
       <Bottom>
         <Button variant="contained" color="secondary" size="large" type="submit">
-          Join
+          Unirse
         </Button>
       </Bottom>
     </Wrapper>
