@@ -164,7 +164,7 @@ export default function HelperButtonGroup() {
             </ul>
             <p className="tip">
               <LightbulbIcon />
-              Video connection will start if you are close to someone else
+              La conexión de Video iniciará si está cerca de alguien más
             </p>
           </Wrapper>
         )}

@@ -174,7 +174,7 @@ export const CustomRoomTable = () => {
                       >
                         <div className="join-wrapper">
                           {hasPassword && <LockIcon className="lock-icon" />}
-                          Join
+                          Unirse
                         </div>
                       </Button>
                     </Tooltip>

@@ -132,30 +132,30 @@ export default class WebRTC {
   // method to set up mute/unmute and video on/off buttons
   setUpButtons() {
     const audioButton = document.createElement('button')
-    audioButton.innerText = 'Mute'
+    audioButton.innerText = 'Mutear'
     audioButton.addEventListener('click', () => {
       if (this.myStream) {
         const audioTrack = this.myStream.getAudioTracks()[0]
         if (audioTrack.enabled) {
           audioTrack.enabled = false
-          audioButton.innerText = 'Unmute'
+          audioButton.innerText = 'Desmutear'
         } else {
           audioTrack.enabled = true
-          audioButton.innerText = 'Mute'
+          audioButton.innerText = 'Desmutear'
         }
       }
     })
     const videoButton = document.createElement('button')
-    videoButton.innerText = 'Video off'
+    videoButton.innerText = 'Video OFF'
     videoButton.addEventListener('click', () => {
       if (this.myStream) {
         const audioTrack = this.myStream.getVideoTracks()[0]
         if (audioTrack.enabled) {
           audioTrack.enabled = false
-          videoButton.innerText = 'Video on'
+          videoButton.innerText = 'Video ON'
         } else {
           audioTrack.enabled = true
-          videoButton.innerText = 'Video off'
+          videoButton.innerText = 'Video OFF'
         }
       }
     })
