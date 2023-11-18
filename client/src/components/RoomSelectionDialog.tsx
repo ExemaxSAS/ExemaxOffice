@@ -85,6 +85,10 @@ const Content = styled.div`
     border-radius: 8px;
     height: 120px;
   }
+  small {
+    color:white;
+    font-size:10px;
+  }
 `
 
 const ProgressBarWrapper = styled.div`
@@ -192,6 +196,7 @@ export default function RoomSelectionDialog() {
                 >
                   Crear / Buscar una Sala Personalizada
                 </Button>
+                <small>powered by SkyOffice - Exemax Office a1.1</small>
               </Content>
             </>
           )}
